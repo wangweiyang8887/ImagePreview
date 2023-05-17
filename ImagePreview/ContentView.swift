@@ -6,16 +6,29 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
+    let url = "https://d37oornn0327yg.cloudfront.net/data/upload/20230428/c426cb9a-def8-4f5d-a128-bdf2e42690cb"
+    @State private var isPresented: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            KFImage(URL(string: url))
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 200, height: 200)
+                .onTapGesture {
+                    withAnimation {
+                        isPresented = true
+                    }
+                }
         }
-        .padding()
+        .ignoresSafeArea()
+        .overlay {
+            ImagePreview(images: [ url ], currentIndex: .constant(0), isPresented: $isPresented)
+        }
+
     }
 }
 

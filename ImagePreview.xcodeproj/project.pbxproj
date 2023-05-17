@@ -14,6 +14,10 @@
 		20B613242A1470D70078FBEA /* ImagePreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B613232A1470D70078FBEA /* ImagePreviewTests.swift */; };
 		20B6132E2A1470D70078FBEA /* ImagePreviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6132D2A1470D70078FBEA /* ImagePreviewUITests.swift */; };
 		20B613302A1470D70078FBEA /* ImagePreviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6132F2A1470D70078FBEA /* ImagePreviewUITestsLaunchTests.swift */; };
+		20B6133D2A1472400078FBEA /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6133C2A1472400078FBEA /* ZoomableScrollView.swift */; };
+		20B6133F2A1472930078FBEA /* ImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6133E2A1472930078FBEA /* ImagePreview.swift */; };
+		20B613422A1472AF0078FBEA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 20B613412A1472AF0078FBEA /* Kingfisher */; };
+		20B613442A1474720078FBEA /* Geometry+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B613432A1474720078FBEA /* Geometry+Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,9 @@
 		20B613292A1470D70078FBEA /* ImagePreviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePreviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B6132D2A1470D70078FBEA /* ImagePreviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewUITests.swift; sourceTree = "<group>"; };
 		20B6132F2A1470D70078FBEA /* ImagePreviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20B6133C2A1472400078FBEA /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
+		20B6133E2A1472930078FBEA /* ImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreview.swift; sourceTree = "<group>"; };
+		20B613432A1474720078FBEA /* Geometry+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Geometry+Utilities.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B613422A1472AF0078FBEA /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,9 @@
 			children = (
 				20B613122A1470D60078FBEA /* ImagePreviewApp.swift */,
 				20B613142A1470D60078FBEA /* ContentView.swift */,
+				20B6133E2A1472930078FBEA /* ImagePreview.swift */,
+				20B6133C2A1472400078FBEA /* ZoomableScrollView.swift */,
+				20B613432A1474720078FBEA /* Geometry+Utilities.swift */,
 				20B613162A1470D70078FBEA /* Assets.xcassets */,
 				20B613182A1470D70078FBEA /* Preview Content */,
 			);
@@ -143,6 +154,9 @@
 			dependencies = (
 			);
 			name = ImagePreview;
+			packageProductDependencies = (
+				20B613412A1472AF0078FBEA /* Kingfisher */,
+			);
 			productName = ImagePreview;
 			productReference = 20B6130F2A1470D60078FBEA /* ImagePreview.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 20B613062A1470D60078FBEA;
+			packageReferences = (
+				20B613402A1472AF0078FBEA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 20B613102A1470D60078FBEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +276,9 @@
 			files = (
 				20B613152A1470D60078FBEA /* ContentView.swift in Sources */,
 				20B613132A1470D60078FBEA /* ImagePreviewApp.swift in Sources */,
+				20B6133F2A1472930078FBEA /* ImagePreview.swift in Sources */,
+				20B613442A1474720078FBEA /* Geometry+Utilities.swift in Sources */,
+				20B6133D2A1472400078FBEA /* ZoomableScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20B613402A1472AF0078FBEA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20B613412A1472AF0078FBEA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20B613402A1472AF0078FBEA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 20B613072A1470D60078FBEA /* Project object */;
 }
