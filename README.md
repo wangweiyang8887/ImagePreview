@@ -8,7 +8,7 @@ A component that supports network image preview and zooming in and out of images
 [![MIT](https://img.shields.io/badge/licenses-MIT-red.svg)](https://opensource.org/licenses/MIT)  
 
 ## Screenshot
-<img src="https://github.com/wangweiyang8887/ImagePreview/assets/11688908/bed6da18-5b50-4441-a771-578138f14885" width="100px">
+<img src="https://github.com/wangweiyang8887/ImagePreview/assets/11688908/bed6da18-5b50-4441-a771-578138f14885" width="200px">
 
 ## Example Usages
 1. ImagePreview
