@@ -1,6 +1,7 @@
 # **ImagePreview for SwiftUI**
 
 A component that supports network image preview and zooming in and out of images using only SwiftUI.
+Also support drag and tap to dismiss.
 
 [![](https://img.shields.io/badge/language-SwiftUI-orange)](https://developer.apple.com/iOS)
 [![](https://img.shields.io/badge/language-Swift-orange)](https://developer.apple.com/iOS)
