@@ -1,6 +1,6 @@
 # **ImagePreview for SwiftUI**
 
-A component that supports image preview and zooming in and out of images using only SwiftUI.
+A component that supports network image preview and zooming in and out of images using only SwiftUI.
 
 [![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS-blue?style=flat-square)](https://developer.apple.com/macOS)
 [![iOS](https://img.shields.io/badge/iOS-13.0-blue.svg)](https://developer.apple.com/iOS)
@@ -8,7 +8,7 @@ A component that supports image preview and zooming in and out of images using o
 [![MIT](https://img.shields.io/badge/licenses-MIT-red.svg)](https://opensource.org/licenses/MIT)  
 
 ## Screenshot
-<img src="Markdown/Zoomable.gif">
+![Simulator Screenshot - iPhone 14 Pro - 2023-05-17 at 16 23 42](https://github.com/wangweiyang8887/ImagePreview/assets/11688908/bed6da18-5b50-4441-a771-578138f14885)
 
 ## Example Usages
 1. ImagePreview
