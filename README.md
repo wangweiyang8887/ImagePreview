@@ -27,8 +27,5 @@ A component that supports network image preview and zooming in and out of images
         }
     ```
 
-## Contact
-email : [98708887@qq.com](98708887@qq.com)
-
 ## License
 ImagePreview is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
