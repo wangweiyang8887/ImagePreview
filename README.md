@@ -1,10 +1,36 @@
-# ImagePreview
-SwiftUI Image Preview
+# **ImagePreview for SwiftUI**
 
-<h1 align="center">Hi 👋, I'm evan</h1>
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+A component that supports image preview and zooming in and out of images using only SwiftUI.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/> </a> </p>
+[![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS-blue?style=flat-square)](https://developer.apple.com/macOS)
+[![iOS](https://img.shields.io/badge/iOS-13.0-blue.svg)](https://developer.apple.com/iOS)
+[![macOS](https://img.shields.io/badge/macOS-11.0-blue.svg)](https://developer.apple.com/macOS)
+[![MIT](https://img.shields.io/badge/licenses-MIT-red.svg)](https://opensource.org/licenses/MIT)  
+
+## Screenshot
+<img src="Markdown/Zoomable.gif">
+
+## Example Usages
+1. ImagePreview
+    ```swift
+        ZStack {
+            KFImage(URL(string: url))
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 200, height: 200)
+                .onTapGesture {
+                    withAnimation {
+                        isPresented = true
+                    }
+                }
+        }
+        .overlay {
+            ImagePreview(images: [ url ], currentIndex: .constant(0), isPresented: $isPresented)
+        }
+    ```
+
+## Contact
+email : [98708887@qq.com](98708887@qq.com)
+
+## License
+ImagePreview is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
